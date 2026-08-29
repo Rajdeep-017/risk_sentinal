@@ -1,0 +1,27 @@
+{
+  "scenario_name": "Deteriorating Financial Metrics",
+  "description": "Leading indicators showing significant cash flow and margin compression",
+  "entity_id": "ORG-MAIN",
+  "entity_type": "organization",
+  "signals": {
+    "days_sales_outstanding_increase": 15,
+    "operating_margin_compression": 0.08,
+    "credit_utilization_spike": 0.25,
+    "payment_defaults_rate": 0.04
+  },
+  "expected_risks": {
+    "liquidity_crisis": 0.7,
+    "covenant_breach": 0.45,
+    "overall_risk_score": 82
+  },
+  "expected_cascade": [
+    "Credit rating downgrade",
+    "Vendor payment delays",
+    "Hiring freezes"
+  ],
+  "expected_mitigation": [
+    "Accelerate collections",
+    "Draw down revolver",
+    "Delay non-critical CapEx"
+  ]
+}

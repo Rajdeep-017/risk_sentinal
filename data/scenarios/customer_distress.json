@@ -1,0 +1,35 @@
+{
+  "scenario_name": "Customer Distress Signal",
+  "description": "Multiple converging signals indicate severe customer distress",
+  "entity_id": "C-1024",
+  "entity_type": "customer",
+  "signals": {
+    "usage_change_pct": -23.4,
+    "complaint_count": 8,
+    "complaint_change_pct": 41.2,
+    "payment_delay_days": 18,
+    "payment_failure_change_pct": 18.3,
+    "support_tickets_change_pct": 31.2,
+    "satisfaction_score": 2.1,
+    "monthly_charges": 89.5,
+    "tenure_months": 14,
+    "clv": 1253.0
+  },
+  "expected_risks": {
+    "churn_probability": 0.82,
+    "revenue_exposure": 840000,
+    "financial_risk": 0.67,
+    "customer_risk": 0.88,
+    "overall_risk_score": 78
+  },
+  "expected_cascade": [
+    "Reduced cash flow",
+    "Increased support costs",
+    "Negative word-of-mouth"
+  ],
+  "expected_mitigation": [
+    "Proactive account review",
+    "Targeted retention offer",
+    "Prioritized support channel"
+  ]
+}

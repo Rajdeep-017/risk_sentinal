@@ -1,0 +1,27 @@
+{
+  "scenario_name": "Network Intrusion & Lateral Movement",
+  "description": "Advanced persistent threat indicators observed in internal subnet",
+  "entity_id": "NET-04",
+  "entity_type": "network_segment",
+  "signals": {
+    "unusual_port_scanning": true,
+    "admin_credential_brute_force": 4500,
+    "data_exfiltration_attempts": 12,
+    "off_hours_access": 0.95
+  },
+  "expected_risks": {
+    "data_breach_probability": 0.75,
+    "system_downtime_risk": 0.85,
+    "overall_risk_score": 95
+  },
+  "expected_cascade": [
+    "Data loss",
+    "Ransomware deployment",
+    "Regulatory fines"
+  ],
+  "expected_mitigation": [
+    "Isolate affected subnet",
+    "Reset compromised credentials",
+    "Initiate incident response protocol"
+  ]
+}

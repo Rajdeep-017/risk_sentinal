@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Data (large files)
+data/raw/
+models/*.json
+models/*.txt
+models/*.joblib
+models/*.pt
+*.csv.gz
+
+# ChromaDB
+chroma_db/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Kaggle
+kaggle.json

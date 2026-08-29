@@ -1,0 +1,27 @@
+{
+  "scenario_name": "Supplier S-104 Major Delay",
+  "description": "Critical supplier experiencing major logistics failure",
+  "entity_id": "S-104",
+  "entity_type": "supplier",
+  "signals": {
+    "avg_delay_increase_days": 12,
+    "sla_breach_rate": 0.85,
+    "communication_delays_hrs": 48,
+    "inventory_depletion_rate": 1.5
+  },
+  "expected_risks": {
+    "supply_chain_disruption": 0.95,
+    "production_impact": 0.8,
+    "overall_risk_score": 85
+  },
+  "expected_cascade": [
+    "Production halt",
+    "Order fulfillment delays",
+    "Customer dissatisfaction"
+  ],
+  "expected_mitigation": [
+    "Activate backup supplier S-022",
+    "Reallocate existing inventory",
+    "Notify critical B2B customers"
+  ]
+}

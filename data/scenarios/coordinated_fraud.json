@@ -1,0 +1,27 @@
+{
+  "scenario_name": "Multi-signal Fraud Attack",
+  "description": "Coordinated synthetic identity and transaction fraud",
+  "entity_id": "GRP-992",
+  "entity_type": "cluster",
+  "signals": {
+    "velocity_spike_multiplier": 5.2,
+    "new_account_clustering": 0.88,
+    "shared_device_ids": 14,
+    "distance_from_home_avg": 450
+  },
+  "expected_risks": {
+    "fraud_loss_exposure": 450000,
+    "regulatory_risk": 0.6,
+    "overall_risk_score": 92
+  },
+  "expected_cascade": [
+    "Chargeback spikes",
+    "Payment processor fines",
+    "Reputational damage"
+  ],
+  "expected_mitigation": [
+    "Freeze identified accounts",
+    "Implement step-up auth",
+    "File SARs"
+  ]
+}
